@@ -60,6 +60,7 @@ nav .hamburger {
   height: 90vh;
   width: 100vw;
   display: flex;
+  overflow: hidden;
 }
 .content .left {
   height: 90vh;
@@ -89,7 +90,61 @@ nav .hamburger {
   justify-content: center;
 }
 @media (max-width: 576px) {
+  .content .right {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
   .content {
     display: grid;
   }
+}
+
+.section {
+  width: 100vw;
+  height: auto;
+  background-color: rgb(208, 228, 235);
+}
+.section h2 {
+  text-align: center;
+}
+.section .flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 576px) {
+  .section .flex {
+    display: grid;
+  }
+}
+.section .card {
+  box-shadow: 5px 5px 5px grey;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  height: 250px;
+  width: 350px;
+}
+
+.contacts {
+  height: auto;
+  display: flex;
+  overflow-y: hidden;
+}
+.contacts .left {
+  width: 50vw;
+  height: 50vh;
+  background-color: rgb(138, 45, 214);
+}
+.contacts .left form {
+  height: 90%;
+  width: 90%;
+  box-shadow: 3px 3px 3px rgb(37, 134, 90);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+}
+.contacts .right {
+  width: 50vw;
+  height: 50vh;
 }/*# sourceMappingURL=style.css.map */

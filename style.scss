@@ -59,6 +59,7 @@ nav{
     height: 90vh;
     width: 100vw;
     display: flex;
+    overflow: hidden;
 
         .left{
             height: 90vh;
@@ -90,6 +91,19 @@ nav{
             flex-direction: column;
             align-items: center;
             justify-content: center;
+
+            @media (max-width:576px)
+            {
+                // display: flex;
+                // width: 100vw;
+                // height: 30vh;
+                // justify-content: center;
+                // align-items: center;
+
+                display: none;
+
+            }
+                 
  
         }
     @media (max-width:576px)
@@ -99,3 +113,56 @@ nav{
     
 }
 
+.section{
+    width: 100vw;
+    height: auto;
+    background-color: $background-color;
+
+    h2{
+        text-align: center;
+    }
+    .flex{
+        display: flex;
+        justify-content: space-evenly;
+        @media (max-width:576px){
+            display: grid;
+        }
+    }
+
+    .card{
+       
+        box-shadow: 5px 5px 5px grey;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        height: 250px;
+        width: 350px;
+    }
+}
+
+.contacts{
+    // width: ;
+    height: auto;
+    display: flex;
+    overflow-y: hidden;
+
+    .left{
+        width: 50vw;
+        height: 50vh;
+        background-color: rgb(138, 45, 214);
+        form{
+            height: 90%;
+            width: 90%;
+            box-shadow: 3px 3px 3px rgb(37, 134, 90);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 20px;
+        }
+
+    }
+
+    .right{
+        width: 50vw;
+        height: 50vh;
+    }
+}
